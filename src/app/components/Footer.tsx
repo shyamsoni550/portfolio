@@ -81,8 +81,7 @@ const Footer: React.FC = () => {
               Vaya Shyam
             </h3>
             <p className="text-slate-400 mb-6 leading-relaxed">
-              Passionate full-stack developer creating innovative web solutions with modern technologies. 
-              Always eager to learn, collaborate, and build amazing digital experiences.
+              MERN full-stack developer with SaaS product ownership, REST API design, CI/CD deployment, WordPress production experience, and AI-powered application work.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((link, index) => (
@@ -138,7 +137,7 @@ const Footer: React.FC = () => {
         {/* Bottom Section */}
         <div className="border-t border-slate-700/50 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="text-slate-400 text-sm mb-4 md:mb-0">
-            &copy; {currentYear} Vaya Shyam. All rights reserved. Built with &hearts; using Next.js & Tailwind CSS
+            &copy; {currentYear} Vaya Shyam. Built with Next.js, TypeScript, and Tailwind CSS.
           </div>
           
           {/* Back to Top Button */}
@@ -156,7 +155,7 @@ const Footer: React.FC = () => {
           <div className="inline-flex items-center space-x-2 bg-slate-800/50 rounded-full px-4 py-2 border border-slate-700/50">
             <span className="text-slate-400 text-xs">Made with</span>
             <div className="flex items-center space-x-1">
-              <span className="text-blue-400 text-xs font-semibold">Next.js</span>
+              <span className="text-blue-400 text-xs font-semibold">Next.js 15</span>
               <span className="text-slate-500">&bull;</span>
               <span className="text-blue-400 text-xs font-semibold">React</span>
               <span className="text-slate-500">&bull;</span>

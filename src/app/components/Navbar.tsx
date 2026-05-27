@@ -63,7 +63,7 @@ const Navbar: React.FC = () => {
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-blue-400/50 hover:border-blue-400 transition-all duration-300 hover:scale-105">
             <Image
-              src="/images/profile.jpg"
+              src="/images/profile.png"
               alt="Vaya Shyam - Profile"
               width={40}
               height={40}

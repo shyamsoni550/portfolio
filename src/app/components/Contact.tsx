@@ -52,7 +52,7 @@ const Contact: React.FC = () => {
       
       setNotification({
         type: 'success',
-        message: 'Message sent successfully! I&apos;ll get back to you soon.'
+        message: "Message sent successfully! I'll get back to you soon."
       });
       
       // Reset form
@@ -85,29 +85,29 @@ const Contact: React.FC = () => {
  
 
   return (
-    <section id="contact" className="bg-slate-800 py-20 px-4 relative overflow-hidden">
-      {/* Subtle animated background elements */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-20 left-20 w-40 h-40 bg-blue-500 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-20 w-56 h-56 bg-slate-600 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-blue-600 rounded-full blur-2xl animate-pulse delay-500"></div>
-      </div>
-      
+    <section id="contact" className="bg-slate-950 py-20 px-4 relative overflow-hidden">
       <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-slate-300 bg-clip-text text-transparent">
-            Get In Touch
-          </h2>
+          <p className="text-sm font-bold uppercase tracking-[0.25em] text-cyan-300">Contact</p>
+          <h2 className="mt-3 text-4xl md:text-5xl font-black text-white">Let&apos;s build something useful</h2>
           <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
-            Have a project in mind or want to collaborate? I&apos;d love to hear from you!
+            Available for remote-first and high-growth full-stack roles, SaaS product work, REST API development, and production web projects.
           </p>
+          <div className="flex flex-wrap justify-center gap-3 text-sm font-semibold">
+            <a className="rounded-full border border-cyan-300/20 bg-cyan-300/10 px-4 py-2 text-cyan-100" href="mailto:vayashyam550@gmail.com">
+              vayashyam550@gmail.com
+            </a>
+            <a className="rounded-full border border-cyan-300/20 bg-cyan-300/10 px-4 py-2 text-cyan-100" href="tel:+917016445196">
+              +91 7016445196
+            </a>
+          </div>
         </div>
 
         <div className="max-w-2xl mx-auto">
           {/* Contact Form */}
-          <div className="bg-slate-700/30 backdrop-blur-lg rounded-2xl p-8 border border-slate-600/50">
+          <div className="bg-slate-900/80 backdrop-blur-lg rounded-2xl p-8 border border-white/10">
             <h3 className="text-2xl font-bold text-white mb-6 flex items-center justify-center">
-              <span className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center mr-3">
+              <span className="w-8 h-8 bg-cyan-500 rounded-full flex items-center justify-center mr-3">
                 <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h.91L12 10.09l9.455-6.269h.909c.904 0 1.636.732 1.636 1.636z"/>
                 </svg>
@@ -139,7 +139,7 @@ const Contact: React.FC = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-slate-800/50 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors duration-300"
+                    className="w-full px-4 py-3 bg-slate-950/70 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-colors duration-300"
                     placeholder="Your Name"
                   />
                 </div>
@@ -154,7 +154,7 @@ const Contact: React.FC = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-slate-800/50 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors duration-300"
+                    className="w-full px-4 py-3 bg-slate-950/70 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-colors duration-300"
                     placeholder="your.email@example.com"
                   />
                 </div>
@@ -171,7 +171,7 @@ const Contact: React.FC = () => {
                   value={formData.subject}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-slate-800/50 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors duration-300"
+                  className="w-full px-4 py-3 bg-slate-950/70 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-colors duration-300"
                   placeholder="Project Collaboration"
                 />
               </div>
@@ -187,7 +187,7 @@ const Contact: React.FC = () => {
                   onChange={handleChange}
                   required
                   rows={6}
-                  className="w-full px-4 py-3 bg-slate-800/50 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors duration-300 resize-none"
+                  className="w-full px-4 py-3 bg-slate-950/70 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-colors duration-300 resize-none"
                   placeholder="Tell me about your project or how we can work together..."
                 />
               </div>
@@ -195,7 +195,7 @@ const Contact: React.FC = () => {
               <button
                 type="submit"
                 disabled={isLoading}
-                className="w-full bg-blue-600 hover:bg-blue-500 disabled:bg-blue-800 text-white font-semibold py-4 px-6 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25 disabled:scale-100 disabled:shadow-none flex items-center justify-center space-x-2"
+                className="w-full bg-cyan-400 hover:bg-cyan-300 disabled:bg-cyan-800 text-slate-950 font-semibold py-4 px-6 rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-cyan-400/20 disabled:shadow-none flex items-center justify-center space-x-2"
               >
                 {isLoading ? (
                   <>

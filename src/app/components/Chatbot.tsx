@@ -45,11 +45,12 @@ export default function Chatbot() {
     setIsLoading(true);
 
     try {
+      const nextMessages = [...messages, userMessage];
       const response = await fetch('/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          messages: messages
+          messages: nextMessages
             .filter((m) => m.id !== '1')
             .map((m) => ({ role: m.role, content: m.content })),
         }),
