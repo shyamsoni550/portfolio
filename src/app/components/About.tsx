@@ -1,24 +1,6 @@
 import React from 'react';
 
 const About: React.FC = () => {
-  const strengths = [
-    {
-      title: 'SaaS product ownership',
-      detail: 'Sole founder and developer of CommentPulse, an AI-powered SaaS product shipped from zero to live in under 6 months.',
-      marker: '01',
-    },
-    {
-      title: 'Full-stack delivery',
-      detail: 'Builds React and Next.js frontends, REST APIs, authentication flows, Flask services, and MongoDB/MySQL-backed features.',
-      marker: '02',
-    },
-    {
-      title: 'Production web work',
-      detail: 'Has shipped WordPress, Elementor, PHP, dashboard, and CMS improvements in real production environments.',
-      marker: '03',
-    },
-  ];
-
   return (
     <section id="about" className="py-20 bg-slate-950 relative overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 relative z-10">
@@ -29,22 +11,17 @@ const About: React.FC = () => {
               Full-stack developer with real product ownership.
             </h3>
           </div>
-          <p className="text-slate-300 text-lg leading-8">
-            I am a Full-Stack Developer focused on MERN stack development, SaaS products, REST API design, and fast product iteration. My resume highlights live AI SaaS work, production CMS deployments, Python GUI tools, engineering dashboards, and full-stack projects using React.js, Flask, Python, MongoDB, Next.js, TypeScript, JWT, and Vercel.
-          </p>
-        </div>
-
-        <div className="mt-12 grid md:grid-cols-3 gap-5">
-          {strengths.map((item) => (
-            <div
-              key={item.title}
-              className="rounded-xl border border-white/10 bg-white/[0.04] p-6 transition hover:-translate-y-1 hover:border-cyan-300/40 hover:bg-white/[0.07]"
-            >
-              <div className="mb-5 text-sm font-black text-cyan-300">{item.marker}</div>
-              <h3 className="text-xl font-bold text-white">{item.title}</h3>
-              <p className="mt-3 text-sm leading-6 text-slate-400">{item.detail}</p>
-            </div>
-          ))}
+          <div className="space-y-5 text-lg leading-8 text-slate-300">
+            <p>
+              I like working close to the point where product decisions meet implementation details. CommentPulse started as a solo build and became a live AI SaaS product, which taught me to think beyond tickets: onboarding, data flow, reporting, deployment, and what users actually need to trust the tool.
+            </p>
+            <p>
+              My day-to-day range is practical: React and Next.js interfaces, Flask and Node APIs, MongoDB/MySQL data layers, WordPress production pages, Python automation, and dashboards that turn slow manual review into something teams can act on faster.
+            </p>
+            <p>
+              I am especially drawn to remote-first or high-growth teams where full-stack versatility, ownership, and fast iteration matter more than staying in a narrow lane.
+            </p>
+          </div>
         </div>
       </div>
     </section>

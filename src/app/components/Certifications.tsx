@@ -14,12 +14,6 @@ const Certifications: React.FC = () => {
       date: 'Jul 2024',
       link: 'https://catalog-education.oracle.com/pls/certview/sharebadge?id=AE55051DB9C4BF7E47283FA868379D5578EFEA9A6DE814429C84330E7B96E091',
     },
-    {
-      title: 'Full Stack MERN',
-      issuer: 'Pursuing',
-      date: 'Current',
-      link: '/resume/vaya_shyam_resume.pdf',
-    },
   ];
 
   return (
@@ -28,10 +22,10 @@ const Certifications: React.FC = () => {
         <div className="text-center mb-14">
           <p className="text-sm font-bold uppercase tracking-[0.25em] text-cyan-300">Certifications</p>
           <h2 className="mt-3 text-4xl md:text-5xl font-black text-white">Verified learning</h2>
-          <p className="mt-4 text-slate-400">Updated to match the latest resume certifications.</p>
+          <p className="mt-4 text-slate-400">Verified credentials with public proof links.</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div className="mx-auto grid max-w-4xl grid-cols-1 md:grid-cols-2 gap-5">
           {certifications.map((cert) => (
             <article
               key={cert.title}

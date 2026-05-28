@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 const Projects: React.FC = () => {
@@ -10,6 +11,7 @@ const Projects: React.FC = () => {
       github: 'https://github.com/shyamsoni550/commentpulse',
       demo: 'https://commentpulse-nine.vercel.app/',
       badge: 'AI SaaS product',
+      image: '/images/commentpulse.png',
     },
     {
       title: 'UserHub',
@@ -19,6 +21,7 @@ const Projects: React.FC = () => {
       github: 'https://github.com/shyamsoni550/userhub-auth-nextjs',
       demo: 'https://userhub-auth-nextjs.vercel.app/',
       badge: 'Auth system',
+      image: '/images/userhub.png',
     },
     {
       title: 'Tide Information App',
@@ -27,7 +30,8 @@ const Projects: React.FC = () => {
       tech: ['React.js', 'Vite', 'REST API', 'Local Storage'],
       github: 'https://github.com/shyamsoni550/tide-app',
       demo: 'https://tide-app-two.vercel.app/',
-      badge: 'Live API app',
+      badge: 'API integration',
+      image: '/images/Tide-app.png',
     },
   ];
 
@@ -40,16 +44,25 @@ const Projects: React.FC = () => {
             <h2 className="mt-3 text-4xl md:text-5xl font-black text-white">Resume projects</h2>
           </div>
           <p className="max-w-xl text-slate-400">
-            Prioritized around the newest resume: CommentPulse, UserHub, and Tide Information App.
+            A mix of live products, production automation, and API-driven builds with measurable outcomes.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
           {projects.map((project) => (
             <article
               key={project.title}
-              className="group flex min-h-[460px] flex-col rounded-2xl border border-white/10 bg-slate-900/80 p-7 transition hover:-translate-y-1 hover:border-cyan-300/40 hover:bg-slate-900"
+              className="group flex min-h-[560px] flex-col rounded-2xl border border-white/10 bg-slate-900/80 p-6 transition hover:-translate-y-1 hover:border-cyan-300/40 hover:bg-slate-900"
             >
+              <div className="mb-6 overflow-hidden rounded-xl border border-white/10 bg-slate-950">
+                <Image
+                  src={project.image}
+                  alt={`${project.title} project screenshot`}
+                  width={1200}
+                  height={675}
+                  className="aspect-video w-full object-cover transition duration-500 group-hover:scale-105"
+                />
+              </div>
               <div className="mb-6 inline-flex w-fit rounded-full border border-cyan-300/20 bg-cyan-300/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-cyan-200">
                 {project.badge}
               </div>
@@ -87,7 +100,7 @@ const Projects: React.FC = () => {
                 )}
                 {!('demo' in project) && (
                   <span className="rounded-lg border border-slate-700 px-5 py-3 font-bold text-slate-400">
-                    Live product
+                    Internal build
                   </span>
                 )}
               </div>

@@ -14,6 +14,8 @@ Vaya Shyam resume facts:
 - Einfochips work: Delivered 4+ client web projects using PHP and WordPress in Agile sprints. Reduced front-end bug backlog by 40% with JavaScript-driven interactivity across 3 client sites. Shipped features on time across 2 consecutive sprints through daily standups and structured code reviews.
 - Project: CommentPulse. AI-powered SaaS built with Flask, Python, React.js, MongoDB, and Vercel. Designed, built, and shipped from zero to live in under 6 months. Includes sentiment analysis, issue detection, Channel Health Score, content gap identification across YouTube comments, PDF report generation, AI chat on live comment data, and a subscription-ready dashboard.
 - Project: UserHub. Built with Next.js 15, TypeScript, MongoDB, JWT, and Nodemailer. Production-ready auth system with 7 REST API endpoints: registration, JWT login, email verification, and password reset secured with bcryptjs. Integrated Nodemailer and Mailtrap SMTP with token expiry.
+- Project: Engineering Dashboards. Built interactive engineering dashboards with Python and Matplotlib, replacing static reports and cutting review cycles by 2 days.
+- Project: Department GUI Automation. Built Python/Tkinter GUI tools adopted across 3 departments, reducing repetitive manual data entry time by about 30%.
 - Project: Tide Information App. Built with React.js, Vite, and REST API integration. Real-time tide prediction app using World Tides API, with Local Storage caching that cut repeat API calls by 60%.
 - Frontend skills: React.js, Next.js 15, TypeScript, JavaScript ES6+, HTML5, CSS3, Tailwind CSS, Vite, Responsive Design.
 - Backend skills: Node.js, Express.js, Flask, Python, REST API Design & Integration, JWT, bcryptjs, Nodemailer.
@@ -22,7 +24,7 @@ Vaya Shyam resume facts:
 - DevOps and tools: Git, GitHub, CI/CD, Vercel, Render, Postman, VS Code, Agile/Scrum.
 - Data and AI: Pandas, NumPy, Matplotlib, Tkinter, SaaS Product Development, Generative AI.
 - Education: B.Tech in Computer Engineering, Aditya Silver Oak Institute of Technology, Ahmedabad, 2021 - 2025, CGPA 8.22/10.
-- Certifications: JavaScript ES6+ from Udemy, Apr 2025. Generative AI Fundamentals from Oracle, Jul 2024. Full Stack MERN, pursuing.
+- Certifications: JavaScript ES6+ from Udemy, Apr 2025. Generative AI Fundamentals from Oracle, Jul 2024.
 `;
 
 // Groq API call function
@@ -41,7 +43,7 @@ Allowed topics:
 - Vaya Shyam's professional summary
 - Skills, tech stack, tools, CMS, AI/data experience
 - Work experience and achievements
-- Projects: CommentPulse, UserHub, Tide Information App
+- Projects: CommentPulse, UserHub, Engineering Dashboards, Department GUI Automation, Tide Information App
 - Education and certifications
 - Contact details from the resume
 - This portfolio website

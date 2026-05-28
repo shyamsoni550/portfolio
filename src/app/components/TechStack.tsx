@@ -5,8 +5,8 @@ const TechStack: React.FC = () => {
     Frontend: ['React.js', 'Next.js 15', 'TypeScript', 'JavaScript ES6+', 'HTML5', 'CSS3', 'Tailwind CSS', 'Vite'],
     Backend: ['Node.js', 'Express.js', 'Flask', 'Python', 'REST API Design', 'JWT', 'bcryptjs', 'Nodemailer'],
     Database: ['MongoDB', 'MongoDB Atlas', 'MySQL', 'Mongoose ODM'],
-    'CMS & UI': ['WordPress', 'Elementor', 'PHP', 'Responsive Design',"Magic-UI","Tailwind CSS",],
-    'Tools & AI': ['Git', 'GitHub', 'CI/CD', 'Vercel', 'Render', 'Postman', 'codex', 'Cluade', 'VS Code', 'Tkinter', 'Generative AI'],
+    'CMS & UI': ['WordPress', 'Elementor', 'PHP', 'Responsive Design', 'Magic UI', 'Tailwind CSS'],
+    'Tools & AI': ['Git', 'GitHub', 'CI/CD', 'Vercel', 'Render', 'Postman', 'Codex', 'Claude', 'VS Code', 'Tkinter', 'Generative AI'],
   };
 
   return (
