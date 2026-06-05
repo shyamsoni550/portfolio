@@ -6,8 +6,8 @@ const About: React.FC = () => {
       <div className="max-w-6xl mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-[0.9fr_1.1fr] gap-10 items-start">
           <div>
-            <p className="text-lg font-bold uppercase tracking-[0.25em] text-cyan-300">About</p>
-            <h3 className="mt-3 text-2xl md:text-5xl font-black text-white">
+            <p className="text-[50px] font-medium uppercase tracking-[0.01em] text-[#57ccca]">About Me</p>
+            <h3 className="mt-[6px] text-[clamp(32px,5vw,48px)] font-extrabold text-[#f8fafc]">
               Full-stack developer with real product ownership.
             </h3>
           </div>

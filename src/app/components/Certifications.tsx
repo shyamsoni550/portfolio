@@ -20,9 +20,9 @@ const Certifications: React.FC = () => {
     <section id="certifications" className="bg-slate-900 py-20 px-4 relative overflow-hidden">
       <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-14">
-          <p className="text-sm font-bold uppercase tracking-[0.25em] text-cyan-300">Certifications</p>
-          <h2 className="mt-3 text-4xl md:text-5xl font-black text-white">Verified learning</h2>
-          <p className="mt-4 text-slate-400">Verified credentials with public proof links.</p>
+          <p className="text-[45px] font-medium uppercase tracking-[0.01em] text-[#57ccca]">Certifications</p>
+          {/* <h2 className="mt-[6px] text-[clamp(32px,5vw,48px)] font-extrabold text-[#f8fafc]">Verified learning</h2> */}
+          <p className="mx-auto mt-4 max-w-[520px] text-[15px] leading-[1.6] text-[#e4e9ef]">Verified credentials with public proof links.</p>
         </div>
 
         <div className="mx-auto grid max-w-4xl grid-cols-1 md:grid-cols-2 gap-5">

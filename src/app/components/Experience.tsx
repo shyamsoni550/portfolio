@@ -30,10 +30,10 @@ const Experience: React.FC = () => {
     <section id="experience" className="bg-slate-950 py-20 px-4 relative overflow-hidden">
       <div className="max-w-5xl mx-auto relative z-10">
         <div className="text-center mb-14">
-          <p className="text-sm font-bold uppercase tracking-[0.25em] text-cyan-300">Experience</p>
-          <h2 className="mt-3 text-4xl md:text-5xl font-black text-white">Professional impact</h2>
-          <p className="mt-4 text-slate-400">
-            Updated directly from the resume, with measurable outcomes and production responsibilities.
+          <p className="text-[50px] font-medium uppercase tracking-[0.03em] text-[#57ccca]">Experience</p>
+          <h1 className="mt-[6px] text-[clamp(32px,5vw,48px)] font-extrabold text-[#f8fafc]">Professional impact</h1>
+          <p className="mx-auto mt-4 max-w-[520px] text-[18px] leading-[1.6] text-[#e2e5e9]">
+             measurable outcomes and production responsibilities.
           </p>
         </div>
 

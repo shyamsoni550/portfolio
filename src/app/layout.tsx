@@ -13,7 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Vaya Shyam | Ahmedabad MERN & AI SaaS Developer",
+  // viewport: "width=device-width, initial-scale=1.0",
+  title: "Vaya Shyam | Full-Stack Devloper",
   description:
     "Portfolio of Vaya Shyam, a MERN full-stack developer with SaaS, REST API, CI/CD, WordPress, and AI product experience.",
 };

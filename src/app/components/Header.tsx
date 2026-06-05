@@ -47,10 +47,10 @@ const Header: React.FC = () => {
   return (
     <header
       id="home"
-      className="min-h-screen bg-[radial-gradient(circle_at_top_left,rgba(34,211,238,0.18),transparent_34%),linear-gradient(135deg,#07111f_0%,#0f172a_48%,#111827_100%)] flex items-center relative overflow-hidden pt-28 pb-16"
+      className="bg-grid-slate-800/[0.04] min-h-screen bg-[#0f0f10] flex items-center relative overflow-hidden pt-28 pb-16"
     >
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(99,102,241,0.18),transparent_34%),radial-gradient(circle_at_bottom_right,rgba(6,182,212,0.12),transparent_30%)]" />
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-cyan-300/70 to-transparent" />
-      <div className="absolute inset-0 opacity-[0.08] [background-image:linear-gradient(rgba(255,255,255,.7)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.7)_1px,transparent_1px)] [background-size:72px_72px]" />
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-12 items-center">
@@ -60,7 +60,14 @@ const Header: React.FC = () => {
               Open to remote-first and high-growth full-stack roles
             </div>
 
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black tracking-normal text-white leading-[0.95]">
+            <h1
+              className="text-[40px] md:text-[64px] font-bold tracking-tight leading-[0.95]"
+              style={{
+                background: 'linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #06b6d4 100%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+              }}
+            >
               Vaya Shyam
             </h1>
 
@@ -69,14 +76,25 @@ const Header: React.FC = () => {
               <span className="animate-pulse text-cyan-300">|</span>
             </div>
 
-            <p className="mt-7 max-w-2xl text-lg leading-8 text-slate-300">
+            <p className="mt-7 max-w-[560px] text-[18px] font-normal leading-[1.7] text-[#94a3b8]">
               Full-Stack Developer with 1+ year of end-to-end software development experience in SaaS product development, REST API design, CI/CD deployment, WordPress production work, and AI-powered product delivery.
             </p>
+
+            <div className="mt-7 flex flex-wrap gap-2">
+              {['React', 'Next.js', 'TypeScript', 'Flask', 'MongoDB'].map((skill) => (
+                <span
+                  key={skill}
+                  className="badge badge-outline rounded-full border border-indigo-400/30 bg-indigo-400/10 px-3 py-1.5 text-xs font-semibold text-indigo-100"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
 
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
               <a
                 href="#projects"
-                className="inline-flex items-center justify-center rounded-lg bg-cyan-400 px-6 py-3 font-bold text-slate-950 transition hover:bg-cyan-300 hover:shadow-lg hover:shadow-cyan-400/20"
+                className="cta-shimmer inline-flex items-center justify-center rounded-lg px-6 py-3 font-bold text-white transition hover:shadow-lg hover:shadow-indigo-500/20"
               >
                 View Projects
               </a>
@@ -111,7 +129,12 @@ const Header: React.FC = () => {
           </div>
 
           <div className="relative">
-            <div className="rounded-2xl border border-cyan-300/20 bg-slate-950/60 p-5 shadow-2xl shadow-cyan-950/30 backdrop-blur">
+            <div
+              className="rounded-2xl border border-indigo-300/20 bg-slate-950/60 p-5 shadow-2xl shadow-cyan-950/30 backdrop-blur"
+              style={{
+                boxShadow: '0 0 0 1px rgba(99,102,241,0.3), 0 0 60px rgba(99,102,241,0.15)',
+              }}
+            >
               <div className="relative aspect-[4/5] overflow-hidden rounded-xl bg-slate-800">
                 <Image
                   src="/images/profile.png"

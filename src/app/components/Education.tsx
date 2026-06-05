@@ -12,8 +12,8 @@ const Education: React.FC = () => {
     <section id="education" className="py-20 bg-slate-900 relative overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 relative z-10">
         <div className="text-center mb-14">
-          <p className="text-sm font-bold uppercase tracking-[0.25em] text-cyan-300">Education</p>
-          <h2 className="mt-3 text-4xl md:text-5xl font-black text-white">Computer Engineering foundation</h2>
+          <p className="text-[40px] font-medium uppercase tracking-[0.01em] text-[#57ccca]">Education</p>
+          <h2 className="mt-[6px] text-[clamp(32px,5vw,48px)] font-extrabold text-[#f8fafc]">Computer Engineering Foundation</h2>
         </div>
 
         <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-6">

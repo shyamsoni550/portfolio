@@ -18,9 +18,9 @@ export default function Home() {
       <Header />
       <About />
       <TechStack />
+      <Projects />
       <Experience />
       <Education />
-      <Projects />
       <Certifications />
       <Contact />
       <Footer />

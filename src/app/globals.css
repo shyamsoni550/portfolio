@@ -33,3 +33,87 @@ html {
   background: rgba(34, 211, 238, 0.35);
   color: #ffffff;
 }
+
+.bg-grid-slate-800\/\[0\.04\] {
+  background-image:
+    linear-gradient(rgba(30, 41, 59, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(30, 41, 59, 0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.cta-shimmer {
+  border: 1px solid transparent;
+  background:
+    linear-gradient(#0f0f10, #0f0f10) padding-box,
+    linear-gradient(135deg, #6366f1, #06b6d4, #6366f1) border-box;
+  background-size: 200% 200%;
+  animation: shimmer 3s linear infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+.skill-card-shimmer {
+  border: 1px solid transparent;
+  background-image:
+    linear-gradient(#1e2a3a, #1e2a3a),
+    linear-gradient(135deg, #6366f1 0%, #2dd4bf 50%, #6366f1 100%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  background-size: 200% 200%;
+  animation: borderShimmer 4s linear infinite;
+}
+
+@keyframes borderShimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* TechStack hover sheen animation (used by TechStack.tsx) */
+@keyframes shimmer_sheen_900ms_ease-in-out_infinite {
+  0% {
+    transform: translateX(-30%) skewX(-15deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(170%) skewX(-15deg);
+    opacity: 0;
+  }
+}
+
+/* Make shimmer more "royal" */
+.skill-card-shimmer {
+  position: relative;
+}
+
+.skill-card-shimmer::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  background: radial-gradient(circle at 20% 0%, rgba(99, 102, 241, 0.35), transparent 55%),
+    radial-gradient(circle at 80% 100%, rgba(45, 212, 191, 0.25), transparent 50%);
+  opacity: 0.9;
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+

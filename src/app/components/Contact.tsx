@@ -88,9 +88,9 @@ const Contact: React.FC = () => {
     <section id="contact" className="bg-slate-950 py-20 px-4 relative overflow-hidden">
       <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-16">
-          <p className="text-sm font-bold uppercase tracking-[0.25em] text-cyan-300">Contact</p>
-          <h2 className="mt-3 text-4xl md:text-5xl font-black text-white">Let&apos;s build something useful</h2>
-          <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
+          <p className="text-[50px] font-medium uppercase tracking-[0.01em] text-[#57ccca]">Contact Me</p>
+          <h2 className="mt-[6px] text-[clamp(32px,5vw,48px)] font-extrabold text-[#f8fafc]">Let&apos;s build something useful</h2>
+          <p className="mx-auto mb-8 mt-4 max-w-[520px] text-[20px] leading-[1.6] text-[#ebeef4]">
             Available for remote-first and high-growth full-stack roles, SaaS product work, REST API development, and production web projects.
           </p>
           <div className="flex flex-wrap justify-center gap-3 text-sm font-semibold">
